@@ -1,25 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+                    /* Configuration global */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+                /* Fin de la configuration global */
 
 p {
     font-weight: 300;
-    color: #1111;
+    color: #111;
 }
+
+/* Début de l'en-tête */
 
 header {
     position: fixed;
     top: 0%;
     left: 0px;
-    padding: 20px;
+    padding: 20px 10px;
     width: 100%;
     z-index: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     transition: 0.5s;
 }
@@ -42,4 +48,122 @@ header {
 
 .navbar li {
     list-style: none;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-reservation {
+    padding: 10px 20px;
+    background-color: #fb911f;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-reservation:hover {
+    background-color: #d87710;
+    transition: ease-out;
+}
+
+header .navbar li:hover {
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+}
+
+.banniere {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/restaurant-html-css-javascript/images/pageheader-banner.jpg);
+    background-size: cover;
+}
+
+#banniere .contenu {
+    max-width: 70%;
+    text-align: center;
+}
+
+#banniere .contenu h2 {
+    color: #ffff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.contenu p:nth-child(2) {
+    color: #ffff;
+    font-size: 1.2em;
+}
+
+.btn1 {
+    font-size: 1em;
+    color: #ffff;
+    background: #fb911f;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn2 {
+    font-size: 1em;
+    color: #ffff;
+    background: #2a4963;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn1:hover {
+    letter-spacing: 4px;
+}
+
+section {
+    padding: 100px;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col-50 {
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col-50 h2 {
+    margin-bottom: 20px;
+}
+
+.titre-texte {
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+.titre-texte span {
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
 }
